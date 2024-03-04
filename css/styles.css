@@ -2,16 +2,35 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 ul {
   list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 button {
   cursor: pointer;
+}
+
+address {
+  font-style: normal;
 }
 
 .visually-hidden {
@@ -25,6 +44,14 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  /* max-width: 1166px; */
+  width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .title {
@@ -42,6 +69,11 @@ button {
 }
 
 /** ==============HEADER================ */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
 
 .header-logo {
   font-size: 18px;
@@ -73,7 +105,13 @@ button {
 /** ==============HERO================ */
 
 .hero {
+  padding-bottom: 80px;
+}
+
+.hero-wrap {
+  padding: 380px 40px 40px 40px;
   background: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -82,6 +120,8 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
+  max-width: 484px;
 }
 
 .hero-buy-btn {
@@ -110,6 +150,8 @@ button {
 
 .features {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .features-list {
@@ -136,9 +178,14 @@ button {
 /** =============TASTE================= */
 
 .taste {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .taste-title {
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .taste-text {
@@ -148,6 +195,9 @@ button {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .taste-list {
