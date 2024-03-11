@@ -143,6 +143,25 @@ img {
   gap: 14px;
 }
 
+.header-contact-link {
+  width: 40px;
+  height: 40px;
+  background-color: #fd9222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-contact-icon {
+  fill: transparent;
+  stroke: #ffffff;
+}
+
+.header-contact-link:hover {
+  background-color: aquamarine;
+}
+
 /** ============================== */
 
 /** ==============HERO================ */
@@ -154,6 +173,11 @@ img {
 .hero-wrap {
   padding: 380px 40px 40px 40px;
   background: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/main-bg.jpeg);
   border-radius: 30px;
 }
 
@@ -300,7 +324,28 @@ img {
 }
 
 .made-title {
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
+/* 
+.made::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/instagram.svg);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.made::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/instagram.svg);
+  display: inline-block;
+  margin-right: 10px;
+} */
 
 .made-image {
 }

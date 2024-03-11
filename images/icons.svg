@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-facebook" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 2.667h-4a6.67 6.67 0 0 0-6.667 6.667v4h-4v5.333h4v10.667h5.333V18.667h4l1.333-5.333h-5.333v-4A1.334 1.334 0 0 1 20 8h4V2.667z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22.667 2.667H9.334a6.667 6.667 0 0 0-6.667 6.667v13.333a6.667 6.667 0 0 0 6.667 6.667h13.333a6.667 6.667 0 0 0 6.667-6.667V9.334a6.667 6.667 0 0 0-6.667-6.667z"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21.333 15.16a5.329 5.329 0 0 1-2.878 5.546 5.337 5.337 0 0 1-6.169-.992 5.33 5.33 0 0 1 1.316-8.505 5.336 5.336 0 0 1 6.228.962 5.328 5.328 0 0 1 1.504 2.989zM23.333 8.667h.013"/>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M30.667 4a14.542 14.542 0 0 1-4.187 2.04 5.975 5.975 0 0 0-6.637-1.661A5.981 5.981 0 0 0 16 10.04v1.333c-2.343.061-4.665-.459-6.759-1.513S4.68 6.297 3.333 4.379c0 0-4.667 12.954 7.333 18.287a15.519 15.519 0 0 1-9.333 2.667C13.333 32 28 25.333 28 10a5.966 5.966 0 0 0-.107-1.107A10.288 10.288 0 0 0 30.666 4z"/>
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M26.667 28v-2.667A5.333 5.333 0 0 0 21.334 20H10.667a5.333 5.333 0 0 0-5.333 5.333V28M16 14.667a5.333 5.333 0 1 0 0-10.666 5.333 5.333 0 1 0 0 10.666z"/>
+    </symbol>
+  </defs>
+</svg>
