@@ -151,6 +151,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.54, -1.21, 0.23, 1.93); */
+  transition: background-color 500ms cubic-bezier(0.54, -1.21, 0.23, 1.93)
+      1000ms,
+    border-radius 500ms linear;
 }
 
 .header-contact-icon {
@@ -160,6 +166,7 @@ img {
 
 .header-contact-link:hover {
   background-color: aquamarine;
+  border-radius: 15px;
 }
 
 /** ============================== */
@@ -267,7 +274,7 @@ img {
 
 .taste {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .taste-title {
@@ -321,6 +328,8 @@ img {
 /** =============MADE================= */
 
 .made {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .made-title {
@@ -375,6 +384,8 @@ img {
 /** =============PRODUCTS================= */
 
 .products {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .products-title {
@@ -415,17 +426,37 @@ img {
 /** =============SELLERS================= */
 
 .sellers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .sellers-title {
+  margin-bottom: 50px;
 }
 
 .sellers-list {
+  display: flex;
+  gap: 16px;
 }
 
 .sellers-item {
+  width: calc((100% - 32px) / 3);
+  border-radius: 15px 15px 0 0;
+}
+
+/* .sellers-item:hover .sellers-cover-text {
+  transform: translateY(0);
+} */
+
+.sellers-item:hover .sellers-cover-text {
+  transform: translateY(0);
 }
 
 .sellers-image {
+}
+
+.sellers-cover-wrap {
+  position: relative;
+  overflow: hidden;
 }
 
 .sellers-subtitle {
@@ -435,6 +466,35 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-top: 0;
+  border-radius: 0 0 15px 15px;
+}
+
+.sellers-cover-text {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0.1) 100%
+  );
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 300ms ease;
 }
 
 /** ============================== */
@@ -442,6 +502,8 @@ img {
 /** =============SELLERS================= */
 
 .loved {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .loved-title {
