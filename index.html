@@ -545,5 +545,67 @@
         </ul>
       </nav>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close">X</button>
+        <p class="title modal-title">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="modal-input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="Enter name*"
+                required
+                id="user-name"
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <label class="modal-label"
+            ><span>Email</span>
+            <span class="modal-input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                placeholder="Enter email"
+                disabled
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </span>
+          </label>
+          <div class="modal-field">
+            <input
+              type="tel"
+              name="user-tel"
+              class="modal-input"
+              placeholder="Enter tel"
+              required
+              title="+380 (96) 111-11-11"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-comment" class="modal-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+              class="modal-text"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
