@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
 }
 
 h1,
@@ -333,6 +334,7 @@ img {
 }
 
 .made-title {
+  margin-bottom: 50px;
   /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -356,7 +358,17 @@ img {
   margin-right: 10px;
 } */
 
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+
 .made-image {
+}
+
+.made-content {
+  padding: 32px;
+  background-color: #ffffff;
 }
 
 .made-subtitle {
@@ -364,12 +376,32 @@ img {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  margin-bottom: 28px;
 }
 
 .made-list {
 }
 
 .made-item {
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.made-item:last-child {
+  margin-bottom: 0;
+}
+
+.made-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  position: absolute;
+  left: 0;
+  top: 5px;
 }
 
 .made-item-text {
@@ -542,6 +574,15 @@ img {
 
 .footer {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-top {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
 }
 
 .footer-text {
@@ -551,6 +592,8 @@ img {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #ffffff;
+  max-width: 300px;
+  margin-right: auto;
 }
 
 .footer-text span {
@@ -561,11 +604,17 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   color: #fff;
+  margin-bottom: 14px;
+}
+
+.footer-soc {
+  margin-right: 50px;
 }
 
 .footer-soc-list {
+  display: flex;
+  gap: 14px;
 }
 
 .footer-soc-item {
@@ -575,6 +624,8 @@ img {
 }
 
 .footer-soc-icon {
+  fill: transparent;
+  stroke: #ffffff;
 }
 
 .footer-address {
@@ -595,10 +646,18 @@ img {
   color: #fff;
 }
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-navigation {
 }
 
 .footer-menu-list {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-menu-item {
@@ -612,15 +671,57 @@ img {
   color: #fff;
 }
 
+.footer-form {
+  display: flex;
+  gap: 8px;
+}
+.footer-input {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  width: 313px;
+  height: 52px;
+  background-color: transparent;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.footer-input::placeholder {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-form-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 17px 40px;
+  background-color: #fd9222;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
   background-color: rgba(30, 24, 35, 0.6);
   width: 100%;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   /* display: flex;
   align-items: center;
   justify-content: center; */
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -726,4 +827,81 @@ img {
   color: teal;
   transition: border-color 300ms linear;
   resize: none;
+}
+
+.check-text {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+/**-- ---------------TOGGLE------------ */
+
+/* .check-text::before {
+  content: '';
+  width: 40px;
+  height: 22px;
+  border: 1px solid #b2aeae;
+  border-radius: 50px;
+  margin-right: 8px;
+  transition-duration: 300ms;
+  transform: rotate(45deg);
+}
+
+.check-text::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: -4px;
+  width: 18px;
+  height: 18px;
+  background-color: #b2aeae;
+  border-radius: 50%;
+  transition-duration: 300ms;
+}
+
+.modal-check:checked + .check-text::after {
+  transform: translate(12px, 12px);
+  background-color: #fafafa;
+}
+
+.modal-check:checked + .check-text::before {
+  background-color: #a3f19d;
+} */
+
+/**-- --------------------------- */
+
+.check-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fd9222;
+}
+
+.check-text span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+/* .modal-check-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.modal-check:checked + .check-text span {
+  background-color: #fd9222;
+  border: none;
+  fill: #fafafa;
 }
