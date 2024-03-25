@@ -54,7 +54,8 @@ img {
 
 .container {
   /* max-width: 1166px; */
-  width: 1166px;
+  /* width: 1166px; */
+  width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -62,8 +63,9 @@ img {
 
 .title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  /* font-size: 24px; */
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -240,19 +242,25 @@ img {
 
 .features {
   background: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .features-list {
   display: flex;
-  gap: 88px;
-  padding-left: 18px;
-  padding-right: 18px;
+  flex-wrap: wrap;
+  /* gap: 88px; */
+  gap: 20px;
+  /* padding-left: 18px;
+    padding-right: 18px; */
 }
 
 .features-item {
-  width: calc((100% - 2 * 88px) / 3);
+  /* width: calc((100% - 2 * 88px) / 3); */
+  width: 100%;
+  padding-right: 28px;
 }
 
 .features-subtitle {
@@ -274,8 +282,10 @@ img {
 /** =============TASTE================= */
 
 .taste {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  /* padding-top: 120px;
+  padding-bottom: 60px; */
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .taste-title {
@@ -285,7 +295,6 @@ img {
 }
 
 .taste-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -293,13 +302,15 @@ img {
   color: #111;
   max-width: 486px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 32px;
 }
 
 .taste-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 32px;
+  /* gap: 24px 32px; */
+  gap: 20px;
   /* column-gap: 32px;
   row-gap: 24px; */
 }
@@ -307,12 +318,14 @@ img {
 .taste-item {
   background-color: #fd9222;
   border-radius: 15px;
-  width: calc((100% - 32px * 3) / 4);
+  /* width: calc((100% - 32px * 3) / 4); */
+  width: 100%;
   padding: 28px 23px;
 }
 
 .taste-image {
   margin-bottom: 36px;
+  margin: 0 auto;
 }
 
 .taste-subtitle {
@@ -904,4 +917,82 @@ img {
   background-color: #fd9222;
   border: none;
   fill: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 734px;
+  }
+
+  .made .container {
+    width: 644px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .features-list {
+    gap: 44px 88px;
+  }
+
+  .features-item {
+    width: calc((100% - 88px) / 2);
+    padding-right: 0;
+  }
+
+  .taste {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .taste-text {
+    margin-bottom: 50px;
+  }
+
+  .taste-list {
+    gap: 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1166px;
+  }
+
+  .made .container {
+    width: 1166px;
+  }
+
+  .features-list {
+    gap: 0 88px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .features-item {
+    width: calc((100% - 2 * 88px) / 3);
+  }
+
+  .taste {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .taste-list {
+    gap: 24px 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 32px * 3) / 4);
+  }
 }
